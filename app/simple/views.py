@@ -3,5 +3,5 @@ from django.http.response import HttpResponse
 
 
 # Create your views here.
-def index(request):
+async def index(request):
     return HttpResponse("Hello, Django")
