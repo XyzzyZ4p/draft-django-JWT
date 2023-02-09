@@ -6,7 +6,7 @@ from dotenv import dotenv_values
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-CONF_DICT = dotenv_values(BASE_DIR / '.env')
+CONF_DICT = dotenv_values(BASE_DIR / '.secret')
 
 # Load
 SECRET_KEY = CONF_DICT.get('DJANGO_SECRET')
