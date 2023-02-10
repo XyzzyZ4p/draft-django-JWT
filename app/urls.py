@@ -1,10 +1,8 @@
 """URL Configuration"""
-from django.contrib import admin
 from django.urls import path, include
-from .simple import urls as simple_urls
+# from .authentication import urls as auth_routes
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include(simple_urls))
+    path('', include('app.authentication.urls', namespace='app.authentication'))
 ]
