@@ -1,3 +1,3 @@
 # Django-JWT
 
-Project that show using JWT in Django
+Реализация авторизации c помощью JWT токена в Django
